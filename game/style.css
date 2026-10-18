@@ -72,11 +72,13 @@ body{
 .AnimalCard{
     position: absolute;
     top: 35%;
-    left: 5%;
+    left: 8%;
     border: 5px solid black;
     border-radius: 20px;
     padding: 105px;
     background-image: url(animals.png);
+    box-shadow: 0 0 10px white;
+
     
 }
 
@@ -89,6 +91,8 @@ body{
     top: 110%;
     font-size: 50px;
     right: 13%;
+    animation: wiggle 1.5s ease-in-out infinite;
+
 }
 
 .ThemeCardMath{
@@ -99,6 +103,8 @@ body{
     font-size: 50px;
     top: 110%;
     right: 22%;
+    animation: wiggle 1s ease-in-out infinite;
+
 }
 
 .ThemeCardFood{
@@ -109,27 +115,41 @@ body{
     font-size: 50px;
     top: 110%;
     right: 27%;
+    animation: wiggle 2s ease-in-out infinite;
 }
 
 .MathCard{
     position: absolute;
     top: 35%;
-    left: 38.5%;
+    left: 40%;
     padding: 105px;
     border: 5px solid black;
     border-radius: 20px;
     background-image: url(math2.png);
+    box-shadow: 0 0 10px white;
+
 }
 
 .FoodCard{
     position: absolute;
     top: 35%;
-    left: 70%;
+    left: 72%;
     padding: 105px;
     border: 5px solid black;
     border-radius: 20px;
+    background-image: url(food.png);
+    box-shadow: 0 0 10px white;
 
 }
 
+@keyframes wiggle{
+    0%,100%{}
+    25%{ rotate: -2deg;}
+    75%{ rotate: 2deg;}
+}
 
-
+.ThemeCardAnimals:hover,.ThemeCardFood:hover,.ThemeCardMath:hover{
+    scale: 1.1;
+    text-shadow: 0 0 10px gold;
+}
+/* finish questions & answers structure*/
