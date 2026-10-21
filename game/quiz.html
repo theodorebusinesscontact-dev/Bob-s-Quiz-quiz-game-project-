@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bob's Quiz</title>
     <link rel="stylesheet" href="stylequiz.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,28 +24,26 @@
     <div class="star" style="top: 80%; left: 80%; animation-delay: 0.9s;"></div>
     <div class="star" style="top: 67%; left: 90%; animation-delay: 0.5;"></div>    
     <h1 id="title">Theme</h1>
-    <span class="ballQ"></span>
-    <span class="ball1"></span>
-    <span class="ball2"></span>
-    <span class="ball3"></span>
-    <span class="ball4"></span>
 <!-- balls are little icons before the questions and answers-->
-
+    <div class="score">
+        <h2>Score: <span id="nscore"></span></h2>
+    </div>
     <div class="Question">
-        <h2 id="questionlabel">What is the meaning of life?</h2>
+        <span id="ballq"><h2></h2></span><h2 id="questionlabel"></h2>
     </div>
     <div class="answer1">
-        <h2 id="answer1label"></h2>
+        <span class="ball"><span id="ball1"><button>A</button></span></span><h2 id="answer1label"></h2>
     </div>
     <div class="answer2">
-        <h2 id="answer2label"></h2>
+        <span class="ball"><span id="ball2"><button>B</button></span></span><h2 id="answer2label"></h2>
     </div>
     <div class="answer3">
-        <h2 id="answer3label"></h2>
+        <span class="ball"><span id="ball3"><button>C</button></span></span><h2 id="answer3label"></h2>
     </div>
     <div class="answer4">
-        <h2 id="answer4label"></h2>
+        <span class="ball"><span id="ball4"><button>D</button></span></span><h2 id="answer4label"></h2>
     </div>
+    <script src="questions.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

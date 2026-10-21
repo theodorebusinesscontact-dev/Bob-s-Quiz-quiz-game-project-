@@ -35,11 +35,14 @@ body{
     position: absolute;
     width: 500px;
     height: 65px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
     border: 5px solid #0A0A45;
     background-color: rgba(24, 7, 77, 0.8);
     border-radius: 20px;
-    top: 30%;
-    left: 20%;
+    top: 20%;
+    left: 32%;
 }
 
 #questionlabel{
@@ -48,12 +51,114 @@ body{
     font-size: 20px;
 }
 
+
+
+#title{
+    position: relative;
+}
+
+#answer1label,#answer2label,#answer3label,#answer4label{
+    font-family: 'Peralta',sans-serif;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
 .answer1{
+    display: flex;
     position: absolute;
     width: 500px;
     border: 5px solid #0A0A45;
+    background-color: rgba(0,0,0,0.4);
     height: 65px;
     border-radius: 20px;
-    left: 20%;
+    left: 32%;
     top: 43%;
+}
+
+.answer2{
+    display: flex;
+    position: absolute;
+    width: 500px;
+    border: 5px solid #0A0A45;
+    background-color: rgba(0,0,0,0.4);
+    height: 65px;
+    border-radius: 20px;
+    left: 32%;
+    top: 55%;
+}
+
+.answer3{
+    display: flex;
+    position: absolute;
+    width: 500px;
+    border: 5px solid #0A0A45;
+    background-color: rgba(0,0,0,0.4);
+    height: 65px;
+    border-radius: 20px;
+    left: 32%;
+    top: 67%;
+}
+
+.answer4{
+    display: flex;
+    position: absolute;
+    width: 500px;
+    border: 5px solid #0A0A45;
+    background-color: rgba(0,0,0,0.4);
+    height: 65px;
+    border-radius: 20px;
+    left: 32%;
+    top: 79%;
+}
+
+#ball1, #ball2, #ball3,#ball4{
+    display: flex;
+    position: absolute;
+    width: 70px;
+    height: 65px;
+    border: 1px solid darkblue;
+    border-radius: 100%;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    left: -15%;
+}
+
+#ball1 button, #ball2 button, #ball3 button, #ball4 button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Chewy', sans-serif;
+    font-size: 40px;
+    color: #0A0A45;
+}
+#ballq{
+    width: 80px;
+    height: 70px;
+    border: 1px solid #0A0A45;
+    border-radius: 100%;
+    display: flex;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Chewy', sans-serif;
+    font-size: 40px;
+    left: -17%;
+}
+
+.score{
+    left: 50px;
+    position: absolute;
+    color: white;
+    font-family: 'Peralta', sans-serif;
+    font-size: 20px;
+}
+
+#ball1:hover,#ball2:hover,#ball3:hover,#ball4:hover{
+    scale: 1.1;
+    background-color: gold;
+
 }
