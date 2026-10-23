@@ -5,7 +5,8 @@ body{
     background: linear-gradient(#000, #1C1E9E);
 }
 
-#title{
+#title2{
+    pointer-events: none;
     font-family: 'Chewy',sans-serif;
     color: white;
     text-shadow: 0 0 3px;
@@ -153,3 +154,21 @@ body{
     text-shadow: 0 0 10px gold;
 }
 
+#back{
+    position: relative;
+    z-index: 100;
+    margin-left: 94%;
+    margin-top: 2%;
+    background-color: gold;
+    color: #1C1E9E;
+    font-size: 50px;
+    border: 1px solid gold;
+    border-radius: 20px;
+    
+}
+#back:hover{
+    color: gold;
+    background-color: #1C1E9E;
+    scale: 1.1;
+    border-color: #1C1E9E;
+}

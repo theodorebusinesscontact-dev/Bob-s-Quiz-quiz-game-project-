@@ -149,16 +149,89 @@ body{
     left: -17%;
 }
 
-.score{
+.score{ 
+    font-size: 20px;
     left: 50px;
     position: absolute;
     color: white;
     font-family: 'Peralta', sans-serif;
-    font-size: 20px;
 }
+    
+   
 
 #ball1:hover,#ball2:hover,#ball3:hover,#ball4:hover{
     scale: 1.1;
     background-color: gold;
 
+}
+
+#back{
+    margin-left: 94%;
+    margin-top: 2%;
+    background-color: gold;
+    color: #1C1E9E;
+    font-size: 50px;
+    border: 1px solid gold;
+    border-radius: 20px;
+    
+}
+#back:hover{
+    color: gold;
+    background-color: #1C1E9E;
+    scale: 1.1;
+    border-color: #1C1E9E;
+}
+
+.secret{
+    animation: pop 0.5s ease-in-out;
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100000;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border: 1px solid gold;
+    border-radius: 16px;
+    box-shadow: 0 0 20px gold;
+    font-family: 'Chewy',sans-serif;
+    background-color: gold;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+}
+
+@keyframes pop{
+    0%{
+        opacity: 0;
+        scale: 0.3;
+    }
+    70%{
+        scale: 1.1;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+
+.best{ 
+    font-size: 20px;
+    left: 9px;
+    top: 10px;
+    position: absolute;
+    color: white;
+    font-family: 'Peralta', sans-serif;
+}
+
+.correct{
+    border-color: #02F24C;
+    background-color: rgba(46, 242, 2,0.4);
+}
+.wrong{
+    border-color: #F20202;
+    background-color: rgba(222, 0, 0, 0.4)
 }
