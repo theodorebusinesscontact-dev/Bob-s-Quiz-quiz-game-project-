@@ -33,7 +33,7 @@ body{
 
 .Question{
     position: absolute;
-    width: 500px;
+    width: 50%;
     height: 65px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -67,7 +67,7 @@ body{
 .answer1{
     display: flex;
     position: absolute;
-    width: 500px;
+    width: 50%;
     border: 5px solid #0A0A45;
     background-color: rgba(0,0,0,0.4);
     height: 65px;
@@ -79,7 +79,7 @@ body{
 .answer2{
     display: flex;
     position: absolute;
-    width: 500px;
+    width: 50%;
     border: 5px solid #0A0A45;
     background-color: rgba(0,0,0,0.4);
     height: 65px;
@@ -91,7 +91,7 @@ body{
 .answer3{
     display: flex;
     position: absolute;
-    width: 500px;
+    width: 50%;
     border: 5px solid #0A0A45;
     background-color: rgba(0,0,0,0.4);
     height: 65px;
@@ -103,7 +103,7 @@ body{
 .answer4{
     display: flex;
     position: absolute;
-    width: 500px;
+    width: 50%;
     border: 5px solid #0A0A45;
     background-color: rgba(0,0,0,0.4);
     height: 65px;
@@ -134,7 +134,7 @@ body{
     color: #0A0A45;
 }
 #ballq{
-    width: 80px;
+    width: 25%;
     height: 70px;
     border: 1px solid #0A0A45;
     border-radius: 100%;
@@ -151,7 +151,7 @@ body{
 
 .score{ 
     font-size: 20px;
-    left: 50px;
+    left: 15px;
     position: absolute;
     color: white;
     font-family: 'Peralta', sans-serif;
@@ -235,3 +235,57 @@ body{
     border-color: #F20202;
     background-color: rgba(222, 0, 0, 0.4)
 }
+
+@media (max-width: 600px){
+    .Question,.answer1,.answer2,.answer3,.answer4{
+        width: 80%;
+        left: 10%;
+        box-sizing: border-box;
+    }
+    .answer1{
+        top: 49%;
+    }
+    .answer2{
+        top: 59%;
+    }
+    .answer3{
+        top: 69%;
+    }
+    .answer4{
+        top: 79%;
+    }
+    #ball1,#ball2,#ball3,#ball4{
+        width: 60px;
+    }
+    #ballq{
+        left: 35%;
+        top: -75px;
+    }
+    .Question{
+        left: 9.5%;
+        top: 30%;
+        padding-bottom: 20%;
+        padding-top: 10%;
+
+    }
+    .score{
+        top: 10.5%;
+    }
+    .best{
+        top: 5%;
+    }
+    #title{
+        top: -15px;
+        left: -7px;
+    }
+    #questionlabel{
+        margin-top: -30px;
+    }
+    #answer1label,#answer2label,#answer3label,#answer4label{
+        padding-left: 35px;
+    }
+    #back{
+        margin-left: 300px;
+        margin-top: -40%;
+    }
+}    
